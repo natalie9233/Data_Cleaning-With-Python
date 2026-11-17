@@ -15,12 +15,11 @@ This project turns a sample Excel contact list into a standardized CSV. It demon
 
 For example, a number written as `202/555/0142` becomes `202-555-0142`. Phone numbers stored as numbers in Excel are read as text before formatting. The export excludes records with a blank do-not-contact flag and retains records with incomplete addresses. Entirely blank columns are omitted.
 
-## Notebooks
+## Notebook and data
 
-- [Original project notebook](customer_call_list_cleaning.ipynb) shows the author's original cleaning steps and saved outputs. To rerun this exact copy, place a copy of `Customer Call List.xlsx` in the notebook's directory.
-- [CSV export notebook](customer_call_list_csv_export.ipynb) is the later version used to generate the results shown above. It applies the additional rule that the do-not-contact flag must be filled in.
-
-To reproduce the CSV, install `pandas` and `openpyxl` in your Jupyter environment, then run the CSV export notebook from the project folder. It reads [the sample Excel file](data/Customer%20Call%20List.xlsx) and writes [the cleaned CSV](data/Customer%20Call%20List%20Cleaned.csv).
+- [Original project notebook](customer_call_list_cleaning.ipynb) contains the original cleaning steps. To rerun it, install `pandas` and `openpyxl` and place the sample Excel file beside the notebook.
+- [Sample Excel file](data/Customer%20Call%20List.xlsx) contains the fictional input records.
+- [Cleaned CSV](data/Customer%20Call%20List%20Cleaned.csv) contains the 10 records from the follow-up export. That export also excluded rows with a blank Do Not Contact flag.
 
 ## Tutorial credit
 
